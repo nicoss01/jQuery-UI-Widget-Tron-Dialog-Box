@@ -1,0 +1,80 @@
+@import url(http://fonts.googleapis.com/css?family=Audiowide);
+/* 
+The Tron Font by Dafont (http://www.dafont.com/tron.font)
+Created by Paul Albers 
+Convert to webfont by http://www.fontsquirrel.com/fontface/generator
+*/
+@font-face {
+    font-family: 'TRONRegular';
+    src: url('font/tron-webfont.eot');
+    src: url('font/tron-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/tron-webfont.woff') format('woff'),
+         url('font/tron-webfont.ttf') format('truetype'),
+         url('font/tron-webfont.svg#TRONRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	background-color:#000	
+}
+.tronDialog{
+	position:absolute;
+	width:419px;
+	font-family:"Audiowide",Arial;
+	font-size:11px;
+	display:none;
+	z-index:2;
+	overflow:hidden;
+}
+.tronDialog .dialogHeader{
+	height:56px;
+	background:url(images/headerBottom.png) repeat-x;	
+	margin:0 19px 0 11px;
+	cursor:move;
+	font-family:"TRONRegular",Arial;
+}
+.tronDialog .headerTitle{
+	height:56px;
+	float:left;	
+	margin0:0 auto;
+}
+.tronDialog .headerLeftTitle{
+	height:56px;
+	width:38px;
+	background:url(images/headerLeftTitle2.png) no-repeat;	
+	float:left;
+	margin-left:1px;
+	cursor:crosshair;
+}
+.tronDialog .headerLeftTitle:hover{
+	background:url(images/headerLeftTitle.png) no-repeat;	
+}
+.tronDialog .headerRightTitle{
+	height:56px;
+	width:34px;
+	background:url(images/sprites.png) -38px 0 no-repeat;	
+	float:left;
+}
+.tronDialog .headerContentTitle{
+	float:left;
+	height:56px;
+	line-height:37px;
+	padding:20px 10px 0 10px;
+	color:#fff;
+	background:url(images/headerBackgroundTitle.png) repeat-x;
+	text-transform:uppercase;
+}
+.tronDialog .dialogBody{
+	padding:10px 20px;
+	color:#FFF;
+	background:url(images/body.png) repeat-y;	
+	cursor:default;
+	color:#0F0;
+}
+.tronDialog .dialogFooter{
+	height:2px;
+	background:url(images/footer.png);	
+}
+object,iframe,*{
+	z-index:1 !important;	
+}
